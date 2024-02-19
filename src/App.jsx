@@ -33,6 +33,12 @@ export default function App() {
     } else {
       setVerified(false);
     }
+    setUserInput({
+      charOne: "",
+      charTwo: "",
+      charThree: "",
+      charFour: "",
+    });
   };
 
   return (
@@ -48,6 +54,7 @@ export default function App() {
             type="password"
             name="charOne"
             onChange={handleChange}
+            value={userInput.charOne}
           />
 
           <input
@@ -56,6 +63,7 @@ export default function App() {
             name="charTwo"
             maxLength="1"
             onChange={handleChange}
+            value={userInput.charTwo}
           />
 
           <input
@@ -64,6 +72,7 @@ export default function App() {
             name="charThree"
             maxLength="1"
             onChange={handleChange}
+            value={userInput.charThree}
           />
 
           <input
@@ -72,6 +81,7 @@ export default function App() {
             name="charFour"
             maxLength="1"
             onChange={handleChange}
+            value={userInput.charFour}
           />
         </div>
 
